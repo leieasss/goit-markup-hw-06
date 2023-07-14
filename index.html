@@ -36,7 +36,7 @@
         </ul>
       </nav>
 
-      <address class="heder-address">
+      <address class="header-address">
         <ul class="list header-adress__menu">
           <li class="menu-address__item">
             <a class="contact-email contact-phone-number contacts link"
@@ -47,6 +47,17 @@
           </li>
         </ul>
       </address>
+
+      <button
+          type="button"
+          class="menu-hamurger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-hamburger" width="32" height="20">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
     </div>
   </header>
 
@@ -146,11 +157,9 @@
         <h2 class="section-title">Our Team</h2>
         <ul class="list conteiner_four__list">
           <li class="item-four-list">
-            <img class="list__four__img" src="./images/our-team/MarkGuerrero.jpg" 
-            srcset="
-            ./images/our-team/MarkGuerrero.jpg  1x,
-            ./images/our-team/MarkGuerrero@2.jpg 2x
-            "
+            <img class="list__four__img" 
+            srcset="./images/our-team/MarkGuerrero.jpg 1x, ./images/our-team/MarkGuerrero@2x.jpg 2x"
+            src="./images/our-team/MarkGuerrero.jpg" 
             alt="foto-employee" width="264" />
             <div class="section_four__item">
               <h3 class="name-working">Mark Guerrero</h3>
@@ -198,9 +207,10 @@
           <li class="item-four-list">
             <!-- ADDSRCSET -->
             
-            <img class="list__four__img" src="./images/our-team/TomFord.jpg" 
+            <img class="list__four__img" 
             
-            srcset="./images/our-team/MarkGuerrero.jpg 1x, ./"
+            srcset="./images/our-team/TomFord.jpg 1x, ./images/our-team/TomFord@2x.jpg 2x"
+            src="./images/our-team/TomFord.jpg" 
             alt="foto-Frontend Developer"
               width="264" />
             <div class="section_four__item">
@@ -244,7 +254,9 @@
             </div>
           </li>
           <li class="item-four-list">
-            <img class="list__four__img" src="./images/our-team/CamilaGarcia.jpg" alt="foto-Camila Garciaw"
+            <img class="list__four__img" 
+            srcset="./images/our-team/CamilaGarcia.jpg 1x, ./images/our-team/CamilaGarcia@2x.jpg 2x"
+            src="./images/our-team/CamilaGarcia.jpg"  alt="foto-Camila Garciaw"
               width="264" />
             <div class="section_four__item">
               <h3 class="name-working">Camila Garcia</h3>
@@ -288,7 +300,9 @@
 
 
           <li class="item-four-list">
-            <img class="list__four__img" src="./images/our-team/DanielWilson.jpg" alt="foto-UI Designer" width="264" />
+            <img class="list__four__img" 
+            srcset="./images/our-team/DanielWilson.jpg 1x, ./images/our-team/DanielWilson@2x.jpg 2x"
+            src="./images/our-team/DanielWilson.jpg"   alt="foto-UI Designer" width="264" />
 
             <div class="section_four__item">
               <h3 class="name-working">Daniel Wilson</h3>
@@ -342,7 +356,7 @@
         <h2 class="section-title customers-title">Customers</h2>
         <ul class="customers-list">
           <li class="customers__item">
-            <a class="customers-link" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
+            <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
                 <use class="icon-link" href="./images/icons.svg#icon-logo1"></use>
               </svg>
@@ -350,7 +364,7 @@
           </li>
 
           <li class="customers__item">
-            <a class="customers-link" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
+            <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
                 <use class="icon-link" href="./images/icons.svg#icon-logo2"></use>
               </svg>
@@ -358,7 +372,7 @@
           </li>
 
           <li class="customers__item">
-            <a class="customers-link" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
+            <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
                 <use class="icon-link" href="./images/icons.svg#icon-logo3"></use>
               </svg>
@@ -366,7 +380,7 @@
           </li>
 
           <li class="customers__item">
-            <a class="customers-link" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
+            <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
                 <use class="icon-link" href="./images/icons.svg#icon-logo4"></use>
               </svg>
@@ -374,7 +388,7 @@
           </li>
 
           <li class="customers__item">
-            <a class="customers-link" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
+            <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
                 <use class="icon-link" href="./images/icons.svg#icon-logo5"></use>
               </svg>
@@ -382,7 +396,7 @@
           </li>
 
           <li class="customers__item">
-            <a class="customers-link" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
+            <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
                 <use class="icon-link" href="./images/icons.svg#icon-logo6"></use>
               </svg>
@@ -455,7 +469,7 @@
               <input class="form-email" type="email" name="email" placeholder="E-mail">
             
         </label>
-        <button class="button-subscribe" type="submit">
+        <button class="button-subscribe wrap" type="submit">
           Subscribe
           <svg class="icon-button" width="24" height="24">
             <use href="./images/icons.svg#telegram"></use>
@@ -566,7 +580,7 @@
       </nav>   
     
       <address class="mobile-address">
-        <ul class="mobile-address-wrap">
+        <ul class="mobile-address-wrap wrap">
           <li class="mobile-address-list">
             <a href="tel:+110001111111" class="mobile-phone">+11 (000)111-11-11</a>
           </li>
