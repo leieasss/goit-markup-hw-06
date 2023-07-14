@@ -19,7 +19,7 @@
 <!-- Header -->
 
 <body>
-  <!-- <header class="page-header">
+  <header class="page-header">
     <div class="heder__conteiner container">
       <nav class="page-nav">
         <a class="link logo" href="./index.html">Web<span class="logo-header">Studio</span></a>
@@ -48,7 +48,7 @@
         </ul>
       </address>
     </div>
-  </header> -->
+  </header>
 
   <!-- Main Content -->
 
@@ -58,7 +58,7 @@
     <section class="hero hero-bg">
       <div class="hero__conteiner container">
         <h1 class="main-title hero__title">
-          Effective Solutions for Your Business
+          Effective Solutions<br/> for Your Business
         </h1>
 
         <button type="button" class="button-btn" data-modal-open>Order Service</button>
@@ -66,7 +66,7 @@
       </div>
     </section>
     <!-- Section 2 -->
-    <!-- <section class="second-section">
+    <section class="second-section">
       <div class="second__container container">
         <h2 class="second-section-title" hidden>content</h2>
         <ul class="list list__sect__second">
@@ -117,10 +117,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Sektion- 3 What are we doing -->
-    <!-- <section class="section secrion__three">
+    <section class="section secrion__three">
       <div class="container photo-text">
         <h2 class="section-title title-three">What are we doing</h2>
         <ul class="list container__three_list">
@@ -137,16 +137,21 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Section4 Our Team-->
 
-    <!-- <section class="section-four">
+    <section class="section-four">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
         <ul class="list conteiner_four__list">
           <li class="item-four-list">
-            <img class="list__four__img" src="./images/our-team/MarkGuerrero.jpg" alt="foto-employee" width="264" />
+            <img class="list__four__img" src="./images/our-team/MarkGuerrero.jpg" 
+            srcset="
+            ./images/our-team/MarkGuerrero.jpg  1x,
+            ./images/our-team/MarkGuerrero@2.jpg 2x
+            "
+            alt="foto-employee" width="264" />
             <div class="section_four__item">
               <h3 class="name-working">Mark Guerrero</h3>
               <p class="proffesion">Product Designer</p>
@@ -191,7 +196,12 @@
 
 
           <li class="item-four-list">
-            <img class="list__four__img" src="./images/our-team/TomFord.jpg" alt="foto-Frontend Developer"
+            <!-- ADDSRCSET -->
+            
+            <img class="list__four__img" src="./images/our-team/TomFord.jpg" 
+            
+            srcset="./images/our-team/MarkGuerrero.jpg 1x, ./"
+            alt="foto-Frontend Developer"
               width="264" />
             <div class="section_four__item">
               <h3 class="name-working">Tom Ford</h3>
@@ -321,13 +331,13 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
 
     <!-- Section 5 Customers -->
 
 
-    <!-- <section class="customers-section">
+    <section class="customers-section">
       <div class="container container-customers ">
         <h2 class="section-title customers-title">Customers</h2>
         <ul class="customers-list">
@@ -381,12 +391,12 @@
         </ul>
       </div>
     </section>
-  </main> -->
+  </main>
 
   <!-- Footer -->
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container__footer container">
       <div class="logo__container">
         <a class="logo-footer__link link logo" href="./index.html">Web<span class="logo-footer">Studio</span>
@@ -457,7 +467,7 @@
     </div>
     
 
-  </footer> -->
+  </footer> 
 
   <!-- MODAL WINDOW -->
   <div class="backdrop is-hidden" data-modal>
@@ -530,7 +540,90 @@
       </form>
     </div>
   </div>
+
+
+  <!-- mobile menu -->
+
+  <div class="menu-container" id="mobile-menu">
+    <button class="mobile_close_btn">
+      <svg class="close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-closeBtn"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu-wrap">
+      <nav class="mobile-nav-wrap">
+        <ul class="list-mobile-menu-wrap">
+          <li class="mobile-nav-list">
+            <a href="./index.html" class="mobile-link">Sudio</a>
+          </li>
+          <li class="mobile-nav-list">
+            <a href="./portfolio.html" class="mobile-link">Portfolio</a>
+          </li>
+          <li class="mobile-nav-list">
+            <a href="" class="mobile-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>   
+    
+      <address class="mobile-address">
+        <ul class="mobile-address-wrap">
+          <li class="mobile-address-list">
+            <a href="tel:+110001111111" class="mobile-phone">+11 (000)111-11-11</a>
+          </li>
+          <li class="mobile-address-list">
+            <a href="mailto:info@devstudio.com" class="mobile-email">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-icon">
+          <li class="icon-menu">
+          <a href="" class="menu-social-icons"
+          target="_blank">
+        <svg class="icon-social" width="24" height="24">
+          <use href="./images/icons.svg#instagram"></use>
+        </svg>
+        </a>
+      </li>
+
+        <li class="icon-menu">
+        <a href="" class="menu-social-icons"
+        target="_blank">
+      <svg class="icon-social" width="24" height="24">
+        <use href="./images/icons.svg#twitter"></use>
+      </svg>
+        </a>
+      </li>
+
+        <li class="icon-menu">
+        <a href="" class="menu-social-icons"
+        target="_blank">
+      <svg class="icon-social" width="24" height="24">
+        <use href="./images/icons.svg#facebook"></use>
+      </svg>
+        </a>
+      </li>
+
+        <li class="icon-menu">
+          <a href="" class="menu-social-icons"
+        target="_blank">
+             <svg class="icon-social" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+             </svg>
+          </a>
+      </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+
+
   <script src="./js/modal.js"></script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
