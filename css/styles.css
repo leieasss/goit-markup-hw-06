@@ -1604,13 +1604,17 @@ gap: 32px;
     border: 1px solid #e7e9fc;
     border-radius: 4px;
     letter-spacing: 0.04em;
-    padding: 11px 23px 11px;
+    padding: 12px 24px;
+    text-align: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+.item-works__img{
+  width: 356px;
+height: 300px;
+}
   .ifp__btn {
     letter-spacing: 0.04em;
   }
