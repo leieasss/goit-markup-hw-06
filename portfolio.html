@@ -67,10 +67,10 @@
         <a class="link logo header-logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
         <ul class="menu list header__menu">
           <li class="menu-list">
-            <a class="link-menu link active" href="./index.html">Studio</a>
+            <a class="link-menu link " href="./index.html">Studio</a>
           </li>
           <li class="menu-list">
-            <a class="link-menu link" href="./portfolio.html">Portfolio</a>
+            <a class="link-menu link active" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="menu-list">
             <a class="link-menu link" href="">Contacts</a>
@@ -90,13 +90,16 @@
         </ul>
       </address>
 
-      <button type="button" class="menu-hamurger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button type="button" class="menu-hamburger js-open-menu" 
+      aria-expanded="false" 
+      aria-controls="mobile-menu">
         <svg class="icon-hamburger" width="32" height="20">
           <use href="./images/icons.svg#icon-hamburger"></use>
         </svg>
       </button>
     </div>
   </header>
+
   <!-- Main Content -->
 
   <main>
@@ -437,17 +440,17 @@
   </footer> 
   <!-- mobile menu -->
 
-  <div class="menu-container" id="mobile-menu">
-    <button class="mobile_close_btn">
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="mobile_close_btn js-close-menu">
       <svg class="close-icon" width="8" height="8">
         <use href="./images/icons.svg#icon-closeBtn"></use>
       </svg>
     </button>
-    <div class="mobile-menu-wrap">
+    <div class="mobile-menu-wrap wrap">
       <nav class="mobile-nav-wrap">
         <ul class="list-mobile-menu-wrap">
           <li class="mobile-nav-list">
-            <a href="./index.html" class="mobile-link">Sudio</a>
+            <a href="./index.html" class="mobile-link">Studio</a>
           </li>
           <li class="mobile-nav-list">
             <a href="./portfolio.html" class="mobile-link">Portfolio</a>
@@ -456,12 +459,12 @@
             <a href="" class="mobile-link">Contacts</a>
           </li>
         </ul>
-      </nav>
-
+      </nav>   
+    
       <address class="mobile-address">
         <ul class="mobile-address-wrap wrap">
           <li class="mobile-address-list">
-            <a href="tel:+110001111111" class="mobile-phone">+11 (000)111-11-11</a>
+            <a href="tel:+110001111111" class="mobile-phone">+11 (000) 111-11-11</a>
           </li>
           <li class="mobile-address-list">
             <a href="mailto:info@devstudio.com" class="mobile-email">info@devstudio.com</a>
@@ -469,40 +472,45 @@
         </ul>
         <ul class="mobile-icon">
           <li class="icon-menu">
-            <a href="" class="menu-social-icons" target="_blank">
-              <svg class="icon-social" width="24" height="24">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
+          <a href="" class="menu-social-icons link"
+          target="_blank">
+        <svg class="icon-social" width="24" height="24">
+          <use href="./images/icons.svg#instagram"></use>
+        </svg>
+        </a>
+      </li>
 
-          <li class="icon-menu">
-            <a href="" class="menu-social-icons" target="_blank">
-              <svg class="icon-social" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
+        <li class="icon-menu">
+        <a href="" class="menu-social-icons link"
+        target="_blank">
+      <svg class="icon-social" width="24" height="24">
+        <use href="./images/icons.svg#twitter"></use>
+      </svg>
+        </a>
+      </li>
 
-          <li class="icon-menu">
-            <a href="" class="menu-social-icons" target="_blank">
-              <svg class="icon-social" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
+        <li class="icon-menu">
+        <a href="" class="menu-social-icons link"
+        target="_blank">
+      <svg class="icon-social" width="24" height="24">
+        <use href="./images/icons.svg#facebook"></use>
+      </svg>
+        </a>
+      </li>
 
-          <li class="icon-menu">
-            <a href="" class="menu-social-icons" target="_blank">
-              <svg class="icon-social" width="24" height="24">
+        <li class="icon-menu">
+          <a href="" class="menu-social-icons link"
+        target="_blank">
+             <svg class="icon-social" width="24" height="24">
                 <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
+             </svg>
+          </a>
+      </li>
         </ul>
       </address>
     </div>
   </div>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
