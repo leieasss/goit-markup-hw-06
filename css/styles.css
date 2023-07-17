@@ -349,8 +349,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 80px 40px 40px 40px;
     z-index: 999;
     /* background-color: var(--white-background); */
@@ -466,6 +466,12 @@ body {
 
 .hero {
     max-width: 1440px;
+}
+@media screen and (min-width: 1158px){
+    .hero{
+       padding-top: 188px;
+        padding-bottom: 188px;
+    }
 }
 
 .hero-bg {
@@ -599,24 +605,29 @@ body {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    gap: 24px;
+    gap: 72px;
 }
 
 @media screen and (max-width: 428px) {
     .second-section-title {
         text-align: center;
-        /* padding-top: 96px; */
-        /* font-family: Roboto; */
-        margin: 72px;
+       
         font-size: 36px;
-        /* font-style: normal; */
+        
         font-weight: 700;
 
 
-        /* letter-spacing: 0.72px; */
-        /* text-transform: capitalize; */
     }
 }
+
+.second-section-title {
+    letter-spacing: 0.02em;
+   
+    line-height: 1.2;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
 
 @media screen and (min-width: 767px) {
     .list__sect__second {
@@ -664,20 +675,19 @@ body {
 .sect-second__item:not(:last-child) {
     margin-right: 0;
 }
-
+/* 
 .second-section-title {
     letter-spacing: 0.02em;
-    font-weight: 500;
-    /* font-size: 20px; */
+   
     line-height: 1.2;
     color: #2e2f42;
     margin-bottom: 8px;
-}
+} */
 
 .second-section-text {
     letter-spacing: 0.02em;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #434455;
 }
 
@@ -724,7 +734,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 72px;
 }
 
 @media screen and (min-width: 767px) {
@@ -758,7 +768,7 @@ body {
 
 .item-four-list {
     background-color: #ffffff;
-    width: calc((100% - 3 * 24px) / 3);
+    /* width: calc((100% - 3 * 24px) / 3); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -850,9 +860,9 @@ body {
     .customers-list {
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 24px;
-        margin: auto;
+        /* margin: auto; */
     }
 }
 
@@ -943,8 +953,7 @@ body {
 
     }
 
-    .section-social-icons {}
-
+    
     /* ADD OUR TEAM */
     .item-four-list {
         display: flex;
@@ -953,7 +962,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 32px;
+        /* gap: 32px; */
     }
 }
 
@@ -1010,7 +1019,7 @@ align-items: center;
     .container__footer {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 108px;
+        /* padding-left: 108px; */
         gap: 72px 24px;
         align-items: normal;
     }
@@ -1083,10 +1092,14 @@ align-items: center;
     align-items: center;
     gap: 16px;
 }
+@media (min-width: 1157px) {
+    .footer-logo-container{
+margin-right: 120px;
 
-/* .social_container {
-  margin-right: 120px;
-} */
+
+
+    }
+}
 
 @media (min-width: 1157px) {
     .social_container {
@@ -1146,11 +1159,11 @@ align-items: center;
     color: #f4f4fd;
 }
 
-.subscribe-footer {
-    /* margin-left: auto; */
-    align-self: stretch;
+ .subscribe-footer {
+    margin-left: auto;
+    /* align-self: stretch; */
 
-}
+} 
 
 .form-footer {
     display: flex;
@@ -1163,6 +1176,11 @@ align-items: center;
     .form-footer {
         flex-direction: row;
     }
+}
+@media (min-width: 1158px) {
+.form-footer{
+    /* margin-left: auto; */
+}
 }
 
 .subscribe-text {
@@ -1215,18 +1233,6 @@ align-items: center;
 
 .button-subscribe {
     align-self: center;
-    /* min-width: 165px;
-    height: 40px;
-    display: flex; */
-
-    /* display: inline-flex; was comment */
-
-    /* padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    margin: 16px;
-    cursor: pointer; */
-
 
     flex-direction: row;
     align-items: center;
