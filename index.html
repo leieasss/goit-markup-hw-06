@@ -20,10 +20,10 @@
 
 <body>
   <header class="page-header">
-    <div class="heder__conteiner container">
-      <nav class="page-nav">
-        <a class="link logo header-logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-        <ul class="menu list header__menu">
+    <div class="heder__conteiner wrap container">
+      <nav class="page-nav wrap">
+        <a class="link logo " href="./index.html">Web<span class="logo-header">Studio</span></a>
+        <ul class="list header__menu wrap">
           <li class="menu-list">
             <a class="link-menu link active" href="./index.html">Studio</a>
           </li>
@@ -39,11 +39,11 @@
       <address class="header-address">
         <ul class="list header-adress__menu">
           <li class="menu-address__item">
-            <a class="contact-email contact-phone-number contacts link"
+            <a class="contacts link"
               href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="contact-phone-number contact-email contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
@@ -64,7 +64,7 @@
     <section class="hero hero-bg">
       <div class="hero__conteiner container">
         <h1 class="main-title hero__title">
-          Effective Solutions<br /> for Your Business
+          Effective Solutions<br/> for Your Business
         </h1>
 
         <button type="button" class="button-btn" data-modal-open>Order Service</button>
@@ -73,28 +73,29 @@
     </section>
     <!-- Section 2 -->
     <section class="second-section">
-      <div class="second__container container">
-        <h2 class="second-section-title" hidden>content</h2>
-        <ul class="list list__sect__second">
+      <div class="container">
+        <h2 class="visually-hidden">content</h2>
+        <ul class="list list__sect__second wrap">
           <li class="sect-second__item">
             <div class="advantage">
               <svg class="icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="second-section-title advantage-item__title">Strategy</h3>
-            <p class="second-section-text advantage-item__text">
+            <h3 class="advantage-item__title">Strategy</h3>
+            <p class="advantage-item__text">
               Our goal is to identify the business problem to walk away with
               the perfect and creative solution.
             </p>
           </li>
 
           <li class="sect-second__item">
-            <div class="advantage"><svg class="icon" width="64" height="64">
+            <div class="advantage">
+              <svg class="icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg></div>
-            <h3 class="second-section-title advantage-item__title">Punctuality</h3>
-            <p class="second-section-text advantage-item__text">
+            <h3 class="advantage-item__title">Punctuality</h3>
+            <p class="advantage-item__text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
@@ -104,8 +105,8 @@
             <div class="advantage"><svg class="icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg></div>
-            <h3 class="second-section-title advantage-item__title">Diligence</h3>
-            <p class="second-section-text advantage-item__text">
+            <h3 class="advantage-item__title">Diligence</h3>
+            <p class="advantage-item__text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
@@ -115,8 +116,8 @@
             <div class="advantage"><svg class="icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg></div>
-            <h3 class="second-section-title advantage-item__title">Technologies</h3>
-            <p class="second-section-text advantage-item__text">
+            <h3 class="advantage-item__title">Technologies</h3>
+            <p class="advantage-item__text">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -126,10 +127,11 @@
     </section>
 
     <!-- Sektion- 3 What are we doing -->
-    <section class="section secrion__three">
+    <section class="section__three">
       <div class="container photo-text">
         <h2 class="section-title title-three">What are we doing</h2>
-        <ul class="list container__three_list">
+
+        <ul class="list wrap container__three_list">
           <li class="third__item">
             <img src="./images/section-2/img-ekran.jpg" alt="foto-ekran" width="360" />
           </li>
@@ -150,7 +152,7 @@
     <section class="section-four">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
-        <ul class="list conteiner_four__list">
+        <ul class="list conteiner_four__list wrap">
           <li class="item-four-list">
             <img class="list__four__img" 
             srcset="./images/our-team/MarkGuerrero.jpg 1x, ./images/our-team/MarkGuerrero@2x.jpg 2x"
@@ -160,11 +162,11 @@
               <h3 class="name-working">Mark Guerrero</h3>
               <p class="proffesion">Product Designer</p>
 
-              <ul class="social-list__four">
+              <ul class="social-list__four list wrap">
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
                   </a>
@@ -172,7 +174,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
@@ -180,7 +182,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
@@ -188,7 +190,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -211,11 +213,11 @@
             <div class="section_four__item">
               <h3 class="name-working">Tom Ford</h3>
               <p class="proffesion">Frontend Developer</p>
-              <ul class="social-list__four">
+              <ul class="social-list__four list wrap">
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
                   </a>
@@ -223,7 +225,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
@@ -231,7 +233,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
@@ -239,7 +241,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -256,11 +258,11 @@
             <div class="section_four__item">
               <h3 class="name-working">Camila Garcia</h3>
               <p class="proffesion">Marketing</p>
-              <ul class="social-list__four">
+              <ul class="social-list__four list wrap">
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
                   </a>
@@ -268,7 +270,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
@@ -276,7 +278,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
@@ -284,7 +286,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -302,11 +304,11 @@
             <div class="section_four__item">
               <h3 class="name-working">Daniel Wilson</h3>
               <p class="proffesion">UI Designer</p>
-              <ul class="social-list__four">
+              <ul class="social-list__four list wrap">
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
                   </a>
@@ -314,7 +316,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
@@ -322,7 +324,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
@@ -330,7 +332,7 @@
                 <li class="social-item">
                   <a class="social-link__four" href="" target="_blank" rel="nooperer no-referrer"
                     aria-label="link to instagram">
-                    <svg class="social-icon icon-social" width="16" height="16">
+                    <svg class="social-icon" width="16" height="16">
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -349,7 +351,7 @@
     <section class="customers-section">
       <div class="container container-customers ">
         <h2 class="section-title customers-title">Customers</h2>
-        <ul class="customers-list wrap">
+        <ul class="customers-list wrap list">
           <li class="customers__item">
             <a class="customers-link wrap" href="" target="_blank" rel="nooperer no-referrer" aria-label="linl to instagram">
               <svg class="section-social-icons" width="104" height="56">
@@ -407,7 +409,7 @@
 
   <footer class="footer">
     <div class="container__footer container wrap">
-      <div class="logo__container footer-logo-container">
+      <div class="logo__container">
         <a class="logo-footer__link link logo" href="./index.html">Web<span class="logo-footer">Studio</span>
         </a>
         <p class="text-footer">
@@ -417,11 +419,11 @@
       </div>
 
       <div class="social_container">
-        <p class="footer-sub">Social media</p>
-        <ul class="social-list">
+        <p class="footer-sub text-footer">Social media</p>
+        <ul class="social-list list wrap">
           <li class="social-item">
             <a class="social-link_footer" href="" target="_blank" rel="nooperer no-referrer"
-              aria-label="linl to instagram">
+              aria-label="link to instagram">
               <svg class="social-icon-footer" width="24" height="24">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
@@ -429,7 +431,7 @@
           </li>
           <li class="social-item">
             <a class="social-link_footer" href="" target="_blank" rel="nooperer no-referrer"
-              aria-label="linl to instagram">
+              aria-label="link to instagram">
               <svg class="social-icon-footer" width="24" height="24">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
@@ -437,7 +439,7 @@
           </li>
           <li class="social-item">
             <a class="social-link_footer" href="" target="_blank" rel="nooperer no-referrer"
-              aria-label="linl to instagram">
+              aria-label="link to instagram">
               <svg class="social-icon-footer" width="24" height="24">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
@@ -445,7 +447,7 @@
           </li>
           <li class="social-item">
             <a class="social-link_footer" href="" target="_blank" rel="nooperer no-referrer"
-              aria-label="linl to instagram">
+              aria-label="link to instagram">
               <svg width="24" height="24" class="social-icon-footer">
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
@@ -453,11 +455,10 @@
           </li>
         </ul>
       </div>
+
       <div class="subscribe-footer">
-
-
         <p class="subscribe-text">Subscribe</p>
-        <form class="form-footer">
+        <form class="form-footer wrap">
           
             <label class="form-label-footer">    
            
@@ -482,7 +483,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
       
-      <button  class="modal-button" data-modal-close type="button">
+      <button  class="modal-button wrap" data-modal-close type="button">
         
         <svg width="8" height="8" class="modal-button-icon">
           <use href="./images/icons.svg#icon-closeBtn"></use>
@@ -490,32 +491,32 @@
       </button>
       <p class="header-modal-window">Leave your contacts and we will call you back</p>
       <form class="form-modal-window">
-        <div class="modal-window-form modal-field__container">
+        <div class="modal-field__container">
         
-          <label class="label-modal-window" for="user-name">Name</label>
-          <div class="modal-field-wrap modal-input__container">
-            <input class="input-modal-window input-modal"  id="user-name" type="text" name="user-name" />
-            <svg width="18" height="24" class="modal-icons">
-              <use href="./images/icons.svg#user">
-              </use>
-            </svg>
-          </div>
+          <label class="label-modal-window" for="user-name"> Name </label>
+             <div class="modal-field-wrap">
+                <input class="input-modal"  id="user-name" type="text" name="user-name" />
+                  <svg width="18" height="24" class="modal-icons">
+                    <use href="./images/icons.svg#user">
+                    </use>
+                  </svg>
+             </div>
         </div>
 
-        <div class="modal-window-form modal-field__container">
-          <label class="label-modal-window" for="user-phone">Phone</label>
-          <div class="modal-field-wrap modal-input__container">
-              <input class="input-modal-window input-modal" type="text" id="user-phone" name="user-phone" />
+        <div class="modal-field__container">
+          <label class="label-modal-window" for="user-phone"> Phone </label>
+          <div class="modal-field-wrap">
+              <input class="input-modal" type="text" id="user-phone" name="user-phone" />
               <svg width="18" height="24" class="modal-icons">
                 <use href="./images/icons.svg#phone">
                 </use>
               </svg>
           </div>
         </div>
-        <div class="modal-window-form modal-field__container">
-          <label class="label-modal-window" for="user-email">Email</label>
-          <div class="modal-field-wrap modal-input__container">
-              <input class="input-modal-window input-modal" type="text" id="user-email" name="user-email" />
+        <div class="modal-field__container">
+          <label class="label-modal-window" for="user-email"> Email </label>
+          <div class="modal-field-wrap">
+              <input class="input-modal" type="text" id="user-email" name="user-email" />
               <svg width="18" height="24" class="modal-icons">
                 <use href="./images/icons.svg#email">
                 </use>
@@ -524,7 +525,7 @@
         </div>
 
         <div class="textatea-modal">
-          <label class="label-modal-window" for="user-comment">Comment</label>
+          <label class="label-modal-window" for="user-comment"> Comment </label>
             <textarea  id="user-comment"  name="user-comment" class="comment-modal-window" rows="5" placeholder="Text input"></textarea>
         </div> 
 
@@ -539,7 +540,7 @@
               </svg>
             </span>
             I accept the terms and conditions of the
-            <a href="./index.html" class="link-privacy">Privacy Policy</a>
+            <a href="./index.html" class="link-privacy link">Privacy Policy</a>
           </label>
 
         </div>
@@ -561,7 +562,7 @@
     </button>
     <div class="mobile-menu-wrap">
       <nav class="mobile-nav-wrap">
-        <ul class="list-mobile-menu-wrap">
+        <ul class="list-mobile-menu-wrap wrap">
           <li class="mobile-nav-list">
             <a href="./index.html" class="mobile-link">Studio</a>
           </li>
@@ -575,15 +576,15 @@
       </nav>   
     
       <address class="mobile-address">
-        <ul class="mobile-address-wrap wrap">
+        <ul class="list mobile-address-wrap wrap">
           <li class="mobile-address-list">
-            <a href="tel:+110001111111" class="mobile-phone">+11 (000) 111-11-11</a>
+            <a href="tel:+110001111111" class="mobile-phone link">+11 (000) 111-11-11</a>
           </li>
           <li class="mobile-address-list">
-            <a href="mailto:info@devstudio.com" class="mobile-email">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="mobile-email link">info@devstudio.com</a>
           </li>
         </ul>
-        <ul class="mobile-icon">
+        <ul class="mobile-icon list wrap">
           <li class="icon-menu">
           <a href="" class="menu-social-icons link"
           target="_blank">
