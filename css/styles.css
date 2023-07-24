@@ -325,7 +325,7 @@ margin-right: 40px;
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/BG/people-office.desk@2x.png);
+        url(../images/BG/people-office2desk.jpg);
     }
   }
   
@@ -1222,13 +1222,16 @@ fill: var(--cloud); */
     }
   
     .page-nav,
-    .header__menu,
-    .header-address {
+    .header__menu {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
-  
+    .header-address{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
     .sect-second__item .advantage-item__title {
       text-align: left;
     }
