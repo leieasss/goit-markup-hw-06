@@ -18,7 +18,7 @@ const renderIngredients = (ingredients, element) => {
     li.classList.add("item");
     return li
   })
-  console.log(liItems);
+  
   ulIngredients.append(...liItems)
 }
 
